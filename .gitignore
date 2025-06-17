@@ -1,0 +1,8 @@
+# OS stuff
+.DS_Store
+Thumbs.db
+
+# Image/video editors
+*.psd
+*.xcf
+*.blend
