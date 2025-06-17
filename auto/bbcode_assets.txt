@@ -1,0 +1,2 @@
+[h2]Icons[/h2]
+[img]https://raw.githubusercontent.com/manaphoenix/WorkshopAssets/main/icons/Avatar128x.png[/img]
