@@ -22,9 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Run BBCode generator script
-        run: |
-          cd WorkshopAssets
-          python scripts/generate_bbcode.py
+        run: python scripts/generate_bbcode.py
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
