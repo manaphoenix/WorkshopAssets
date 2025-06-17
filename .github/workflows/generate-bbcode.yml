@@ -21,6 +21,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Run debug script
+        run: |
+          pwd
+          ls -R
+
       - name: Run BBCode generator script
         run: python scripts/generate_bbcode.py
 
