@@ -1,0 +1,32 @@
+name: Generate BBCode Assets
+
+on:
+  push:
+    paths:
+      - "banners/**"
+      - "gifs/**"
+      - "icons/**"
+      - "scripts/generate_bbcode.py"
+
+jobs:
+  generate-bbcode:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run BBCode generator script
+        run: python scripts/generate_bbcode.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update bbcode_assets.txt"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
