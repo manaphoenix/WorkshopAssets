@@ -3,9 +3,7 @@ name: Debug
 on:
   push:
     paths:
-      - "banners/**"
-      - "gifs/**"
-      - "icons/**"
+      - "*"
 
 jobs:
   debug:
