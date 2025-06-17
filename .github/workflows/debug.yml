@@ -1,0 +1,21 @@
+name: Debug
+
+on:
+  push:
+    paths:
+      - "banners/**"
+      - "gifs/**"
+      - "icons/**"
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run debug script
+        run: |
+          pwd
+          ls -R
