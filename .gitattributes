@@ -1,0 +1,37 @@
+# === Ensure consistent line endings ===
+* text=auto
+
+# === Treat common text files as UTF-8 ===
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+
+# === Mark binary files ===
+# These won't be diffed or merged by Git
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.webp binary
+*.ico binary
+
+*.psd binary
+*.xcf binary
+*.kra binary
+
+*.blend binary
+*.fbx binary
+*.obj binary
+
+*.bbmodel binary
+*.ase binary
+
+# === Ignore linguist stats (prevents GitHub from mislabeling repo language) ===
+*.psd linguist-vendored
+*.blend linguist-vendored
+*.xcf linguist-vendored
+*.kra linguist-vendored
+*.bbmodel linguist-vendored

@@ -1,41 +1,55 @@
-# macOS system files
+# === OS SYSTEM FILES ===
 .DS_Store
-
-# Windows system files
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# Image editing software backups / temp
-*.psd
-*.xcf~
-*.kra~
-*.bak
+# === EDITOR / IDE SETTINGS ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === COMMON TEMP / BACKUP FILES ===
 *.tmp
-
-# 3D modeling temp or autosave files
-*.blend1
-*.blend2
-*.max
-*.3ds~
-*.obj~
-*.fbx~
+*.temp
+*.bak
+*.swp
 *.lock
-
-# Video/GIF editing cache
 *.log
 *.cache
 *.autosave
 
-# File indexing or metadata
-.idea/
-.vscode/
-*.swp
+# === PHOTOSHOP ===
+*.psb
+*.abr
+*.asl
+*.aco
 
-# GitHub-specific
+# === BLENDER ===
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+
+# === GIMP ===
+*.xcf~
+*.xcf-backup
+*.gbr
+*.gih
+*.pat
+
+# === ASEPRITE ===
+*.aseprite-data
+*.aseprite-preview
+*.aseprite-backup
+
+# === BLOCKBENCH ===
+*.bbmodel.autosave
+*.bbmodel.backup
+
+# === GIT CONFLICT / PATCH FILES ===
 *.orig
 *.rej
 
-# Ignore unexported sources if you want to only track final media:
-# (uncomment below if you store source files elsewhere)
-# source/
+# === OPTIONAL: UNEXPORTED SOURCES
